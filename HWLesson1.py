@@ -59,3 +59,12 @@
 #             break
 #         else: continue
 #     else: print('no')
+
+# Решение преподавателя
+# n = int(input('Введите n => '))
+# m = int(input('Введите m => '))
+# k = int(input('Введите k => '))
+# if k < m * n and (k % m or k % m) and k != 1:
+#     print('yes')
+# else:
+#     print('no')
