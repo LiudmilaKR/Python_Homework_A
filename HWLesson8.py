@@ -22,6 +22,17 @@
 # num = int(input('Введите количество строк => '))
 # read_last(num, path_file)
 
+# Здесь можно было использовать 
+# my_text = data.read().splitlines()
+# тогда элементы листа получаются без символа переноса строки!
+
+# Решение преподавателя
+# def read_last(lines: int, file: str):
+#     with open(file, 'r', encoding='utf-8') as f:
+#         line_list = f.read().splitlines()
+#     print(*line_list[-lines:], sep='\n')
+
+# read_last(3, 'HomeworkA/article.txt')
 # 2.Документ «article.txt» содержит следующий текст:
 # Вечерело
 # Жужжали мухи
@@ -45,6 +56,30 @@
 #         # print(max_len_elem)
 #     with open ('HomeworkA/result.txt', 'w', encoding='utf-8') as data1:
 #         data1.write(max_len_elem)
+
+# path_file = 'HomeworkA/article.txt'
+# longest_words(path_file)
+
+# Решение преподавателя
+# def longest_words(file: str):
+#     with open (file, 'r', encoding='utf-8') as f:
+#         word_list = []
+#         line_list = f.read().splitlines()
+#         # print(line_list)
+#         for line in line_list:
+#             word_list.extend(line.split()) # extend - если в один список добавляем другой
+#         # print(word_list)
+#         max_word = word_list[0]
+#         for word in word_list:
+#             if len(word) > len(max_word):
+#                 max_word = word
+#         result = []
+#         for word in word_list:
+#             if len(word) == len(max_word):
+#                 result.append(word)
+#         with open ('HomeworkA/result.txt', 'w', encoding='utf-8') as res:
+#             for word in result:
+#                 res.write(word + '\n')
 
 # path_file = 'HomeworkA/article.txt'
 # longest_words(path_file)

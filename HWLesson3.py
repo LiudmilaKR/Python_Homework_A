@@ -72,7 +72,14 @@
 #             break
 #         else:
 #             temp += 1
-
+# Решение преподавателя
+# some_list = [int(input()) for _ in range(int(input('Введите количество элментов ')))]
+# x = int(input())
+# min_diff = abs(some_list[0])
+# for i in some_list:
+#     if abs(x - i) < abs(x - min_diff):
+#         min_diff = i
+# print(min_diff)
 # Задача 20: * В настольной игре Скрабл (Scrabble) каждая буква имеет определенную ценность.
 # В случае с английским алфавитом очки распределяются так:A, E, I, O, U, L, N, S, T, R – 1 очко;
 # D, G – 2 очка; B, C, M, P – 3 очка; F, H, V, W, Y – 4 очка; K – 5 очков; J, X – 8 очков; Q, Z – 10 очков.
@@ -96,3 +103,11 @@
 #         if item in v:
 #             sum = sum + k
 # print(f'Слово <{some_string}> весит {sum} очков')
+
+# Решение преподавателя
+# letter_dict = {'A': 1, 'E': 1, 'I': 1, 'O': 1, 'U': 1, 'L': 1, 'D': 2, 'G': 2, 'Д': 2, 'К': 2, 'Л': 2, 'М': 2, 'П': 2}
+# sum = 0
+# some_string = 'ulda'.upper()
+# for el in some_string:
+#     sum += letter_dict[el]
+# print(sum)

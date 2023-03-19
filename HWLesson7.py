@@ -23,6 +23,23 @@
 # if len(some_set) > 1: print('Пам парам')
 # else: print('Парам пам-пам')
 
+# Решение преподавателя
+# def count_of_vowel(word):
+#     vowel_set = {'а', 'о', 'е', 'у', 'э', 'ю', 'и', 'я', 'ё', 'ы'}
+#     count = 0
+#     for letter in word:
+#         if letter in vowel_set:
+#             count += 1
+#     return count
+
+# some_poem = input().split()
+# for ind in range(len(some_poem) - 1):
+#     if count_of_vowel(some_poem[ind]) != count_of_vowel(some_poem[ind + 1]):
+#         print('Пам парам')
+#         break
+# else:
+#     print('Парам пам-пам')
+
 # Задача 36.Создайте список из случайных чисел. Найдите количество различных элементов в нем.
 
 # import random

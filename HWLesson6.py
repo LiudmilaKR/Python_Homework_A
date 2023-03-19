@@ -9,6 +9,8 @@
 
 # some_list = [a1 + (i - 1) * d for i in range(1, n)]
 # print(some_list)
+# Вариант преподавателя
+# some_list = [i for i in range(a1, a1 + (n -1) * d + 1, d)]
 
 # Задача 32: Определить индексы элементов массива (списка), значения которых принадлежат заданному диапазону
 # (т.е. не меньше заданного минимума и не больше заданного максимума)
@@ -28,3 +30,10 @@
 #         res_list.append(i)
 
 # print(res_list)
+# Вариант преподавателя
+some_list = [int(input('Введите элемент списка: ')) for _ in range(int(input('Введите количество элементов: ')))]
+a = int(input())
+b = int(input())
+for ind in range(len(some_list)):
+    if a <= some_list[ind] <= b:
+        print(ind)

@@ -27,6 +27,19 @@
 #             sum += (-1) * int(some_str[i + 1])
 
 # print(f'Результат выражения ({some_str}) равен {sum}')
+# Решение преподавателя
+# some_str = input('Введите пример ')
+# res = 0
+# znak = ''
+# for el in some_str:
+#     if el.isdigit():
+#         if znak =='-':
+#             res -= int(el)
+#         else:
+#             res += int(el)
+#     else:
+#         znak = el
+# print(res)
 
 # Задача 2
 # Словом в данной задаче считается последовательность букв, ограниченная пробелами или началом или концом строки.
@@ -64,6 +77,20 @@
 #         i += 1
 #     else: i += 1
 # print(sstr[temp : len(sstr)])
+
+# Решение преподавателя
+# some_str = 'Здравствуйте! Я - Ваша тётя!'
+# some_str = some_str + ' '
+# word = ''
+# for letter in some_str:
+#     if letter != ' ':
+#         word += letter
+#     else:
+#         print(word)
+#         word = ''
+
+# # Решение через split
+# print(*some_str.split(), sep='\n')
 
 # Задача 26:  Напишите программу, которая на вход принимает два числа A и B,
 # и возводит число А в целую степень B с помощью рекурсии.
